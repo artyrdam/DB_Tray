@@ -1,4 +1,3 @@
-import sys
 import openpyxl
 from tkinter import filedialog as fd
 
