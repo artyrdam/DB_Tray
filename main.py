@@ -1,9 +1,12 @@
+import sys
 import openpyxl
 from tkinter import filedialog as fd
 
 
 def get_excel_data():
     path = fd.askopenfilename()
+    if path == "":
+        exit()
 
     wb_obj = openpyxl.load_workbook(path)
     sheet_obj = wb_obj.active
